@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
+            "args": ["${workspaceFolder}/y64-ins-bin/addq.bin"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            // "redirectInput": "${workspaceFolder}/spec/input0.txt",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "preLaunchTask": "Build ed"
+        },
+    ],
+//     "tasks": [
+        
+//     ]
+}

@@ -1,0 +1,13 @@
+ // TODO: fix error
+    StudentWrapper(const std::string &id, const Student &student) :id(id),student(student){
+        //this->id = id;
+        //this->student = student;
+    }
+
+If your id and name member variables are const, you cannot initialize them in the constructor body using assignment statements. 
+You must use a member initializer list to initialize them. After the change member variables are being initialized in the constructor initializer list,
+, which means that their values are set before the constructor body begins executing.
+
+This is because member initializer lists initialize the member variables directly, without creating temporary objects, 
+whereas initializing member variables in the constructor body requires creating temporary objects and then copying or moving (can’t do if const) them into the member variables. 
+ 

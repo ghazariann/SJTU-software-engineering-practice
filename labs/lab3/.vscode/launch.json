@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}\\hanoi.exe",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            // "redirectInput": "${workspaceFolder}/spec/input0.txt",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "preLaunchTask": "Build lab3"
+        },
+    ],
+//     "tasks": [
+        
+//     ]
+}

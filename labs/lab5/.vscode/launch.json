@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            //"redirectInput": "${workspaceFolder}/spec/input0.txt",
+            "environment": [],
+            "externalConsole": false,
+            "setupCommands": [
+                { // Display content in STL containers pretty
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "MIMode": "gdb",
+            "preLaunchTask": "Debug main",
+        },
+    ],
+}

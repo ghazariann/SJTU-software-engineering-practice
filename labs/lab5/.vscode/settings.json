@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "set": "cpp",
+        "ostream": "cpp"
+    }
+} // {
+//     "files.associations": {
+//         "ostream": "cpp",
+//         "vector": "cpp",
+//         "optional": "cpp",
+//         "istream": "cpp",
+//         "system_error": "cpp",
+//         "array": "cpp",
+//         "tuple": "cpp",
+//         "type_traits": "cpp",
+//         "utility": "cpp"
+//     }
+// }

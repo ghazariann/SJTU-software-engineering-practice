@@ -1,0 +1,39 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+            "label": "Build Main",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+				"-fdiagnostics-color=always",
+				"-g",
+                "-o",
+                "${workspaceFolder}\\main",
+                "${workspaceFolder}\\main.cc",
+                "${workspaceFolder}\\Class.cc",
+				"${workspaceFolder}\\Student.cc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+				"-fdiagnostics-color=always",
+				"-g",
+                "-o",
+                "${workspaceFolder}\\${fileBasenameNoExtension}.exe",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+
+	]
+}
